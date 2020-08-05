@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #FAEBD7;
     font-family: Arial, Helvetica, san-serif;
 }
 
@@ -41,24 +41,33 @@ body {
     font-size: 13px;
 }
 
+a:link {
+  color: #DAA520;
+}
+
+/* visited link */
+a:visited {
+  color: #B8860B;
+}
+
 button.choose-file-button {
     width: 200px;
     height: 40px;
     border-radius: 2px;
-    background-color: #ffffff;
-    border: solid 1px #7052CB;
+    background-color: #FAEBD7;
+    border: solid 1px #A52A2A;
     font-size: 13px;
-    color: #7052CB;
+    color: #A52A2A;
 }
 
 button.analyze-button {
     width: 200px;
     height: 40px;
-    border: solid 1px #7052CB;
+    border: solid 1px #B8860B;
     border-radius: 2px;
-    background-color: #7052CB;
+    background-color: #A52A2A;
     font-size: 13px;
-    color: #ffffff;
+    color: #fff;
 }
 
 button:focus {
