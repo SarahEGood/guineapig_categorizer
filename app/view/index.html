@@ -1,0 +1,47 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+  <script src="https://use.fontawesome.com/83ee2628f5.js"></script>
+</head>
+<body>
+<div>
+  <div class='center'>
+    <div class='title'>Which breed is my Guinea Pig?</div>
+    <p>
+      Send me an picture of your pig and I'll do my best to identify their breed.
+    </p>
+    <p>
+    <div class='content'>
+      <div class='no-display'>
+        <input id='file-input'
+               class='no-display'
+               type='file'
+               name='file'
+               accept='image/*'
+               onchange='showPicked(this)'>
+      </div>
+      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+      <div class='upload-label'>
+        <label id='upload-label'>No file chosen</label>
+      </div>
+      <div>
+        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+      </div>
+      <div class='analyze'>
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
+    </div>
+    <footer>
+        <p>Model by Sarah Good <a href="https://github.com/SarahEGood/fastai-v3"><i class="fa fa-github" style="font-size:24px"></i></a></p>
+        <p>Template and Webapp by <a href="https://github.com/render-examples/fastai-v3">anurag and aduong</a></p>
+        <p>Special Thanks to <a href="https://forums.fast.ai/u/mrfabulous1/summary">mrfabulous1</a> for helping me troubleshoot this app.</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
